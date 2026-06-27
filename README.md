@@ -21,6 +21,7 @@ Apple Reminders 느낌의 간단한 할 일(Todo) 관리 기능이 포함되어 
 - **의도된 에러**: 타이머 초기값을 99분으로 잘못 설정하여 UI 텍스트(25:00) 불일치 에러 발생 유도.
 - **결과**: 테스트 실패 시 `cypress/screenshots` 폴더에 에러 발생 순간의 화면 캡쳐본 자동 저장됨 확인.
   
-  ![Cypress Error Screenshot](cypress/screenshots/timer.cy.ts/Lofi%20Pomodoro%20App%20--%20should%20display%20the%20initial%202500%20focus%20timer%20(failed).png)
+  ![Cypress Error Screenshot 1](cypress/screenshots/timer.cy.ts/Lofi%20Pomodoro%20App%20--%20should%20display%20the%20initial%202500%20focus%20timer%20(failed).png)
+  ![Cypress Error Screenshot 2](cypress/screenshots/timer.cy.ts/Lofi%20Pomodoro%20App%20--%20should%20start%20the%20timer%20and%20tick%20down%20when%20play%20is%20clicked%20(failed).png)
 
 - **해결 과정**: Cypress 에러 로그를 통해 실패 지점을 파악하고 코드(`App.tsx`)를 정상으로 원복 완료.
