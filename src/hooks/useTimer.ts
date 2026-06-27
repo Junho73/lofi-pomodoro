@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export type TimerMode = 'focus' | 'break';
 
-export const useTimer = (initialFocusTime: number = 25, initialBreakTime: number = 5) => {
+export const useTimer = (initialFocusTime: number = 99, initialBreakTime: number = 5) => {
   const [mode, setMode] = useState<TimerMode>('focus');
   const [focusTime, setFocusTime] = useState(initialFocusTime);
   const [breakTime, setBreakTime] = useState(initialBreakTime);
